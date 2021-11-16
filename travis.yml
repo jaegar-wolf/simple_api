@@ -1,0 +1,13 @@
+---
+
+language: python
+
+python:
+  - '3.6'
+
+install:
+  - apt-get update && apt-get install python3-pip
+  - pip install flask pytest pytest-flask
+
+script:
+  - pytest
